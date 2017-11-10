@@ -1,0 +1,14 @@
+<ul >
+  <li *ngFor="let post of posts, let i = index">
+  <!--  <a [routerLink]="[i]">{{post.title}}</a> -->
+    <h3>Post n° {{i}}</h3>
+    <p>Utilisateur{{post.userId}}</p>
+    <a href="user/{{post.userId}}">Voir l'utilisateur </a>
+    <p>{{post.title}}</p>
+    <p>{{post.content}}</p>
+
+    <img *ngIf="post.img" src="{{post.img}}" height="100" width="100">
+    <p>{{post.user}}</p>
+  </li>
+</ul>
+

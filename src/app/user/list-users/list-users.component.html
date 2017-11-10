@@ -1,0 +1,11 @@
+<ul >
+  <li *ngFor="let user of users, let i = index">
+    <!--  <a [routerLink]="[i]">{{post.title}}</a> -->
+    <h3>User n° {{i}}</h3>
+    <p>{{user.firstName}}</p>
+    <p>{{user.lastName}}</p>
+    <a href="user/{{user.id}}/posts">Voir tout les posts </a>
+
+  </li>
+</ul>
+
